@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1601530542997
+Build-Jdk: 1.8.0_171
+Built-By: sdn
+Bundle-Description: a SDN traffic Monitoring App
+Bundle-ManifestVersion: 2
+Bundle-Name: traffic_monitor
+Bundle-SymbolicName: org.traffic_monitor.app.traffic_monitor
+Bundle-Version: 1.10.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.traffic_monitor.app;uses:="org.onosproject.net.devic
+ e";version="1.10.0"
+Import-Package: org.onosproject.net;version="[1.10,2)",org.onosproject.n
+ et.device;version="[1.10,2)",org.slf4j;version="[1.7,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/org.traffic_monitor.app.AppComponent.xml
+Tool: Bnd-3.0.0.201509101326

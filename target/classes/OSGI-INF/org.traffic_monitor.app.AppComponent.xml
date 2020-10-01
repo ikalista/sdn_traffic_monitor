@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" immediate="true" name="org.traffic_monitor.app.AppComponent" activate="activate" deactivate="deactivate">
+    <implementation class="org.traffic_monitor.app.AppComponent"/>
+    <property name="service.pid" value="org.traffic_monitor.app.AppComponent"/>
+    <reference name="deviceService" interface="org.onosproject.net.device.DeviceService" cardinality="1..1" policy="static" bind="bindDeviceService" unbind="unbindDeviceService"/>
+</scr:component>
